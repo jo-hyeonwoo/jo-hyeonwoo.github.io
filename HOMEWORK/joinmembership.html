@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        address {
+            font-size: 6px;
+            color: darkgray;
+            text-align: center;
+        }
+
+        h1 {
+            display: block;
+            color: darkorange;
+            font-size: 45px;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a href="main.html" style="text-decoration-line: none ">
+        <h1>Jo's Market</h1>
+    </a>
+    <form action="">
+        <fieldset style="background-color: darkorange">
+            <legend style="text-align:center ">회원가입</legend>
+            <ul>
+                <li><label for="id">ID : </label><input size="25" type="text" name="id" id="id" placeholder="영어 소문자 + 숫자 8자 이상"><br></li>
+                <li><label for="password">PASSWORD : </label><input size="25" type="password" name="password" id="password" placeholder="영어 소문자 + 숫자 8자 이상"></li>
+                <li><label for="name">Name : <input size="25" type="text" name="name" id="name" placeholder="전우치"></label></li>
+                <li><label for="birth">Birth : <input type="date" name="birth" id="birth"></label></li>
+                <li><label for="gender">Gender : </label><input type="checkbox" name="gender" value="남자">남
+                    <input type="checkbox" name="gender" value="여자">여
+                </li>
+                <li><label for="ph">P.H : <input type="text" name="ph" id="ph" placeholder="000-(0)000-0000" pattern="\d{3}-\d{3,4}-\d{4}" title="전화번호는 3-4-4형식이여야 합니다."></label></li>
+                <li><label for="email">e-mail</label> <input type="email" name="email" placeholder="email@mail.com"></li>
+                <li><label for="address">Address : <input type="text" size="60"><button type="button" name="" onclick="location.href='http://www.daum.net'">search</button></label></li>
+
+                <li><label for="introduce">Introduce</label></li>
+                <textarea name="introduce" id="introduce" cols="50" rows="10"></textarea>
+
+
+
+            </ul>
+            <input type="submit" onclick="alert('not yet!!')">
+
+
+
+        </fieldset>
+    </form>
+    <hr color="#000000" size="0">
+    <br>
+    <address>서울시 강동구 성내동 jo company. &copy;copyright reserved by jo</address>
+</body>
+
+</html>
